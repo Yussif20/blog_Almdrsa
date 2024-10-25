@@ -1,6 +1,6 @@
 import Logo from './Logo';
 import SearchBar from './SearchBar';
-import RegionMenu from './RegionMenu';
+import RegionMenu from './CategoryMenu';
 
 const Header = () => {
   return (
