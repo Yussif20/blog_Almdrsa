@@ -1,10 +1,12 @@
 import Card from './Card';
-import data from '../data.json';
+import { useContext } from 'react';
+import { DataContext } from '../DataContext';
 
 const CardContainer = () => {
+  const { dataState } = useContext(DataContext);
   return (
-    <div className="grid gap-3 grid-cols-3 w-10/12 mx-auto mt-12">
-      {data.map((item) => (
+    <div className="grid gap-3 grid-cols-3 w-10/12 mx-auto my-12">
+      {dataState.map((item) => (
         <Card
           key={item.id}
           img={item.img}

@@ -1,4 +1,19 @@
+import { useContext } from 'react';
+import { DataContext } from '../DataContext';
+
 const SearchBar = () => {
+  const { originalData, setDataState } = useContext(DataContext);
+
+  const searchChangeHandler = (event) => {
+    const searchTerm = event.target.value.toLowerCase();
+
+    const filteredResults = originalData.filter((article) =>
+      article.title.toLowerCase().includes(searchTerm)
+    );
+
+    setDataState(filteredResults);
+  };
+
   return (
     <form className="relative block max-w-md">
       <div className="absolute left-8 top-5">
@@ -25,6 +40,7 @@ const SearchBar = () => {
         type="text"
         name="search"
         placeholder="Search...."
+        onChange={searchChangeHandler}
       />
     </form>
   );

@@ -11,10 +11,7 @@ const Card = ({ img, category, title, avatar, author, date, link }) => {
       <Link to={`/${link}`}>
         <h2 className="text-2xl font-semibold leading-7 ">{title}</h2>
       </Link>
-      <div
-        className="flex items-center justify-between w-full mt-4 text-[#97989F] text-sm
-]"
-      >
+      <div className="flex items-center justify-between w-full mt-4 text-[#97989F] text-sm">
         <p className="flex items-center gap-2">
           <img
             className="size-9 rounded-full"
