@@ -13,6 +13,7 @@ const CardContainer = () => {
           avatar={item.avatar}
           author={item.author}
           date={item.date}
+          link={item.id}
         />
       ))}
     </div>

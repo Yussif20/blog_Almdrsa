@@ -1,13 +1,21 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from './pages/Layout';
+import ArticlePage from './pages/ArticlePage';
 import CardContainer from './components/CardContainer';
-import Header from './components/Header';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { index: true, element: <CardContainer /> },
+      { path: ':article', element: <ArticlePage /> },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div className="container font-sans w-screen">
-      <Header />
-      <CardContainer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
