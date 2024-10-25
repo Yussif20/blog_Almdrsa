@@ -9,8 +9,6 @@ A React-based application displaying news articles by category and search functi
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 - [Components Overview](#components-overview)
-- [Future Improvements](#future-improvements)
-- [License](#license)
 
 ## Features
 
@@ -27,13 +25,20 @@ A React-based application displaying news articles by category and search functi
 - **React Context API**: Global state management, particularly for data filtering and searching.
 - **CSS (or Tailwind CSS)**: Styling components and ensuring responsiveness.
 
+### Screenshot
+
+![](/src/assets/screenshot.png)
+
+### Links
+
+- Live Site URL: [Yusif-Blog](https://blog-almdrsa.vercel.app/)
+
 ## Setup Instructions
 
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yussif20/blog-Almdrasa.git
-   cd news-portal
+   git clone https://github.com/Yussif20/blog_Almdrsa
    ```
 
 2. **Install dependencies**:
