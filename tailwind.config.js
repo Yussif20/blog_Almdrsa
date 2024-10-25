@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         sans: ['Work Sans', 'sans-serif'],
       },
+        colors: {
+        cardBorder: '#E8E8EA',
+      },
     },
   },
   plugins: [],
